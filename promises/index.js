@@ -18,14 +18,15 @@ function render() {
   container.innerHTML = view(user);
 }
 
+
 fetch(apiUrl).then(function (data) {
     user = data;
     // return fetch(`${user.repos_url}${oauthParams}`);
 }).then(function(data) {
   // user.repos = {};
   // const repoUrls = [];
-  // for (let repo of data) {
   //
+  // for (let repo of data) {
   //   repoUrls.push({
   //     name: repo.name,
   //     url: `${repo.languages_url}${oauthParams}`
