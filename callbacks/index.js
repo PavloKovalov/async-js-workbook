@@ -1,6 +1,6 @@
 import getJSON from '../ajax/get_json.js';
 import view from './view.js';
-import { GH_CLIENT_ID, GH_CLIENT_SECRET } from './gh_config.js';
+import { GH_CLIENT_ID, GH_CLIENT_SECRET } from '../gh_config.js';
 
 // say my name!
 const githubName = 'octocat';

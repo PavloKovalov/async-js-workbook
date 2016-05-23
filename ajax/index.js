@@ -13,6 +13,12 @@ request.onload = function () {
   }
 };
 
+/**
+ *  Endpoints:
+ *  /users.json - valid JSON with some data
+ *  /error.json - just a string case error in JSON.parse
+ */
+ 
 // request.open('GET', '/users.json', true);
 // request.send();
 

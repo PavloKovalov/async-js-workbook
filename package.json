@@ -1,10 +1,11 @@
 {
   "name": "promises",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "budo index.js:bundle.js --live -- -t babelify"
+    "ajax": "cd ajax && budo index.js --live -- -t babelify",
+    "callbacks": "cd callbacks && budo index.js:bundle.js --live -- -t babelify",
+    "promises": "cd promises && budo index.js:bundle.js --live -- -t babelify"
   },
   "author": "Pavel Kovalyov <pavel.kovalyov@gmail.com>",
   "license": "MIT",
