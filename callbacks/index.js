@@ -9,8 +9,8 @@ const oauthParams = `?client_id=${GH_CLIENT_ID}&client_secret=${GH_CLIENT_SECRET
 const apiUrl = `https://api.github.com/users/${githubName}`;
 
 function requestGitHub(url, callback) {
-  getJSON(`${url}${oauthParams}`, function() {
-    callback.apply(this, arguments);
+  getJSON(`${url}${oauthParams}`, function(data) {
+    callback(data);
     render();
   });
 }

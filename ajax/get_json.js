@@ -5,7 +5,7 @@ export default function (url, cb) {
     if (this.status >= 200 && this.status < 400) {
       // Success!
       var data = JSON.parse(this.response);
-      cb.call(this, data);
+      cb(data);
     } else {
       // We reached our target server, but it returned an error
       throw new Error(this.response);
