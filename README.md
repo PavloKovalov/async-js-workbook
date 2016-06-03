@@ -9,17 +9,17 @@ $ npm install
 
 ### To play with AJAX
 ```sh
-$ npm start ajax
+$ npm run ajax
 ```
 
 ### To play with callbacks
 ```sh
-$ npm start callbacks
+$ npm run callbacks
 ```
 
 ### To play with promises
 ```sh
-$ npm start promises
+$ npm run promises
 ```
 
 ----
